@@ -25,6 +25,4 @@ jobs:
             -e MIXEWAY_PROJECT_ID=${{ secrets.MIXEWAY_PROJECT_ID }}\
             -e MODE=STANDALONE \
             -e MIXEWAY_PROJECT_NAME=${{ secrets.MIXEWAY_PROJECT_NAME }} \
-            -e COMMIT_ID=${{ github.sha }} \
-            -e BRANCH=master \
             -v /opt/lab_sec_audit/sast:/opt/sources mixeway/scanner:latest
